@@ -1,0 +1,20 @@
+<form class="example-form" (ngSubmit)="create_update()">
+
+        <mat-form-field class="example-full-width">
+          <mat-label>ID</mat-label>
+          <input matInput name="_id" #_id="ngModel" type="text" placeholder="id" [(ngModel)]="country._id">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput name="name" #name="ngModel" type="text" placeholder="Username" [(ngModel)]="country.name">
+        </mat-form-field>
+  <br>
+        <mat-form-field class="example-full-width">
+          <mat-label>Capital</mat-label>
+          <input matInput name="capital" #capital="ngModel" type="text" placeholder="Capital" [(ngModel)]="country.capital">
+        </mat-form-field>
+    <br>
+
+    <button mat-button color="primary">Primary</button>
+</form>
